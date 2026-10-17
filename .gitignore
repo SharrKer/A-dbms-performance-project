@@ -1,0 +1,47 @@
+# Java and Python build products
+/out/
+*.class
+__pycache__/
+*.py[cod]
+
+# Local third-party JDBC drivers
+/lib/*.jar
+
+# Generated benchmark outputs and local console logs
+/result/benchmark-work/
+/result/logs/
+/data/working/updated/
+
+# Dataset files are kept locally until redistribution rights are confirmed
+/data/original/
+/data/working/originalCSV/
+/data/working/largeCSV/*
+!/data/working/largeCSV/generate_movies_large.py
+!/data/working/largeCSV/validation_report.md
+
+# Local credentials and private keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local IDE configuration
+.vscode/
+.idea/
+
+# LaTeX build products
+*.aux
+*.out
+*.toc
+*.synctex.gz
+
+# Operating-system files
+.DS_Store
+Thumbs.db
